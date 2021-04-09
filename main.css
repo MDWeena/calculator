@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.95);
+}
+
+.calculator-grid{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(100px, auto) repeat(5, 100px);
+}
+
+.calculator-grid button{
+    cursor: pointer;
+    font-size: 2em;
+    border: 1px solid white;
+    background: rgb(160, 120, 82);
+}
+
+.calculator-grid button:hover{
+    background: rgba(160, 120, 82, .75);
+}
+
+.span2{
+    grid-column: span 2;
+}
+
+.output{
+    grid-column: 1/-1;
+    background: rgba(255, 255, 255, .95);
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output .output_previous{
+    color: rgba(0, 0, 0, .6);
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.output .output_current{
+    color: rgba(0, 0, 0,);
+    font-size: 2.5em;
+}
+
